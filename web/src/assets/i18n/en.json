@@ -1,0 +1,19 @@
+{
+  "CONTACTUS": {
+    "FORM": {
+      "INPUTNAME": "Name",
+      "INPUTEMAIL": "Email",
+      "INPUTPHONE": "Phone",
+      "BUTTON": "Send",
+      "FORMCONFIRMATION": "Message sent successfully!"
+    },
+    "ERRORS": {
+      "COMPLETE": "Fill in the field",
+      "EMAIL": "Fill in a valid email"
+    },
+    "SUCCESS": {
+      "TITLE": "Message sent successfully!",
+      "MESSAGE": "We'll be back in touch soon. Thank you!"
+    }
+  }
+}

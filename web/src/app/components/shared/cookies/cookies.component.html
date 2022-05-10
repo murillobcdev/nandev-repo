@@ -1,0 +1,13 @@
+<ng-container *ngIf="cookiePermission == false">
+  <div *ngIf="isCookie != true"
+    class="p-3 text-center cookies d-flex flex-column justify-content-center align-items-center">
+    <p>Este site utiliza cookies para viabilizar sua melhor experiência.</p>
+    <a href="{{ 'POLITICA_LGPD.LINK' | translate }}" target="_blank" class="link_cookies mb-3">Saiba mais</a>
+    <div>
+      <button type="button" (click)="allowCookies()" class="btn me-1 btn-success allow_cookies">Permitir
+        Cookies</button>
+      <button type="button" (click)="cookieDismiss()" class="btn btn-outline-danger dismiss_cookies">Não
+        permitir</button>
+    </div>
+  </div>
+</ng-container>

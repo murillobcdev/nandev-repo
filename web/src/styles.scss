@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@300;400&display=swap");
+@import "~bootstrap/scss/bootstrap-reboot.scss";
+@import "~bootstrap/scss/bootstrap-grid.scss";
+@import "~bootstrap/scss/bootstrap-utilities.scss";
+@import "~bootstrap/scss/_forms.scss";
+@import "~bootstrap/scss/_grid.scss";
+@import "~bootstrap/scss/_images.scss";
+@import "~bootstrap/scss/_breadcrumb.scss";
+@import "~bootstrap/scss/_buttons.scss";
+@import "~bootstrap/scss/_alert.scss";
+@import "~bootstrap/scss/_nav.scss";
+@import "~bootstrap/scss/_navbar.scss";
+
+@import url("../src/assets/font-face/style.css");
+
+:root {
+  --primary-color: #e31d1a;
+  --secondary-color: #707070;
+  --tertiary-color: #eeeeee;
+  --quarternary-color: #505050;
+  --quinary-color: #c6c6c6;
+  --slide-box:#4A594A;
+}
+
+* {
+  outline-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  transition: all 0.5s;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border: 0px none transparent;
+  transition: all 0.5s;
+}
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary-color);
+  transition: all 0.5s;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none transparent;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  @media (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin: 25px 0;
+  b {
+    font-family: "Dancing Script", cursive;
+    color: var(--primary-color);
+  }
+}
+
+.form-control,
+.form-select {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: transparent;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: transparent;
+}
+
+.append {
+  border-bottom: 1px solid var(--secondary-color);
+  border-radius: 0;
+}
+
+.loading {
+  mix-blend-mode: multiply;
+}
+
+.form-check {
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  label {
+    position: relative;
+    cursor: pointer;
+  }
+  label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 5px;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--secondary-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.is-invalid label:before {
+  border: 2px solid var(--primary-color);
+}
+.btn {
+  box-shadow: none !important;
+  border-radius:0;
+}
+
+.btn-formica {
+  border-radius: 0;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  &:hover {
+    border: 2px solid var(--quarternary-color);
+    color: var(--quarternary-color);
+  }
+}

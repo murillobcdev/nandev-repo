@@ -1,0 +1,19 @@
+{
+  "CONTACTUS": {
+    "FORM": {
+      "INPUTNAME": "Nome",
+      "INPUTEMAIL": "E-mail",
+      "INPUTPHONE": "Telefone",
+      "BUTTON": "Enviar",
+      "FORMCONFIRMATION": "Mensagem enviada com sucesso!"
+    },
+    "ERRORS": {
+      "COMPLETE": "Preencha o campo",
+      "EMAIL": "Preencha com um E-mail valido"
+    },
+    "SUCCESS": {
+      "TITLE": "Mensagem enviada com sucesso!",
+      "MESSAGE": "Em breve retornaremos o contato. Obrigado!"
+    }
+  }
+}
