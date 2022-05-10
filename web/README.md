@@ -7,7 +7,7 @@ Site NaNdev
 ## Servidor em Desenvolvimento
 Digite `ng serve` no terminal. Navegue para `http://localhost:4200/`.
 
-## Compilar para Teste Innova
+## Compilar para Teste
 Digite `npm run staging`. Os arquivos ficarão na pasta `dist/`.
 
 ## Compilar para Produção 
