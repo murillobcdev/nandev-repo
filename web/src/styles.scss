@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Roboto:wght@700&display=swap");
+
 @import "~bootstrap/scss/bootstrap-reboot.scss";
 @import "~bootstrap/scss/bootstrap-grid.scss";
 @import "~bootstrap/scss/bootstrap-utilities.scss";
@@ -10,16 +11,12 @@
 @import "~bootstrap/scss/_alert.scss";
 @import "~bootstrap/scss/_nav.scss";
 @import "~bootstrap/scss/_navbar.scss";
-
 @import url("../src/assets/font-face/style.css");
 
 :root {
   --primary-color: #e31d1a;
   --secondary-color: #707070;
   --tertiary-color: #eeeeee;
-  --quarternary-color: #505050;
-  --quinary-color: #c6c6c6;
-  --slide-box:#4A594A;
 }
 
 * {
@@ -66,19 +63,23 @@
 html,
 body {
   overflow-x: hidden;
-  background-color: #fff;
-  font-family: "Lato", sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  font-family: "Merriweather", serif;
   font-size: 12px;
   @media (min-width: 992px) {
     font-size: 16px;
   }
 }
 
-h2 {
-  color: var(--secondary-color);
+h1 {
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--tertiary-color);
   margin: 25px 0;
-  b {
-    font-family: "Dancing Script", cursive;
+  span {
+    font-weight: normal;
     color: var(--primary-color);
   }
 }
@@ -96,11 +97,6 @@ h2 {
   box-shadow: none;
   border-bottom: 1px solid var(--secondary-color);
   background-color: transparent;
-}
-
-.append {
-  border-bottom: 1px solid var(--secondary-color);
-  border-radius: 0;
 }
 
 .loading {
@@ -159,17 +155,23 @@ h2 {
 .is-invalid label:before {
   border: 2px solid var(--primary-color);
 }
+
 .btn {
   box-shadow: none !important;
-  border-radius:0;
+  border-radius: 0;
+  transition:all ease 0.3s;
 }
 
-.btn-formica {
-  border-radius: 0;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+.btn-nandev {
+  font-family: "Roboto", sans-serif !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-style: normal;
   &:hover {
-    border: 2px solid var(--quarternary-color);
-    color: var(--quarternary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
   }
 }

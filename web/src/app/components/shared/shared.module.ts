@@ -15,6 +15,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { ErrorMessageComponent } from './error-message/error-message.component';
 import { SwiperModule } from 'swiper/angular';
 import { LightgalleryModule } from 'lightgallery/angular';
+import { IntroComponent } from './intro/intro.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,6 +29,7 @@ const components = [
   FormconfirmationComponent,
   CookiesComponent,
   ErrorMessageComponent,
+  IntroComponent
 ];
 
 @NgModule({
