@@ -1,3 +1,4 @@
+import { OurjobsComponent } from './ourjobs/ourjobs.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -29,7 +30,8 @@ const components = [
   FormconfirmationComponent,
   CookiesComponent,
   ErrorMessageComponent,
-  IntroComponent
+  IntroComponent,
+  OurjobsComponent
 ];
 
 @NgModule({

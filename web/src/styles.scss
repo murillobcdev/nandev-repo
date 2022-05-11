@@ -63,7 +63,7 @@
 html,
 body {
   overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #333;
   font-style: italic;
   font-family: "Merriweather", serif;
   font-size: 12px;
@@ -162,10 +162,10 @@ h1 {
   transition:all ease 0.3s;
 }
 
-.btn-nandev {
+.btn-nandev, .btn-nandev_alt {
   font-family: "Roboto", sans-serif !important;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -174,4 +174,8 @@ h1 {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
   }
+}
+.btn-nandev_alt{
+  border: 2px solid black;
+  color: black;
 }
