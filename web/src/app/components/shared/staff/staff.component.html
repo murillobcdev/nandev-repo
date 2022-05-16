@@ -1,0 +1,15 @@
+<div class="container pt-5">
+  <h2>estamos prontos para<br /> te atender!
+  </h2>
+  <div class="row mt-5">
+    <ng-container *ngFor="let member of staffMembers">
+      <div class="col-lg-4 mb-4 member">
+        <div class="img-wrapper">
+          <img [src]="member.imageSrc" [alt]="member.name" class="img-fluid">
+        </div>
+        <h6 class="mt-3">{{member.name}}</h6>
+        <p>{{member.title}}</p>
+      </div>
+    </ng-container>
+  </div>
+</div>

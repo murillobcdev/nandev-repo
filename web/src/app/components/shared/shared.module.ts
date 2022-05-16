@@ -1,3 +1,5 @@
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { StaffComponent } from './staff/staff.component';
 import { OurjobsComponent } from './ourjobs/ourjobs.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -31,7 +33,9 @@ const components = [
   CookiesComponent,
   ErrorMessageComponent,
   IntroComponent,
-  OurjobsComponent
+  OurjobsComponent,
+  StaffComponent,
+  ContactUsComponent
 ];
 
 @NgModule({

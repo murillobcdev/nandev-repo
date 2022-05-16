@@ -1,0 +1,10 @@
+.col-3 {
+  color: #f2f2f2;
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  padding:5px 0;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,49 @@
+.container {
+  background-color: white;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: "Roboto", serif;
+  }
+  .member {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    border-top:2px solid #f2f2f2;
+    padding:4rem 0;
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      max-width: 225px;
+      height: 225px;
+      img {
+        max-width: 225px;
+        height: 225px;
+        object-fit: cover;
+        transition: all ease 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    h6{
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: "Roboto", serif;
+      cursor:pointer;
+    }
+    p {
+      font-style: normal;
+      font-size:0.9rem;
+    }
+  }
+}
