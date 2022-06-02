@@ -1,0 +1,63 @@
+<div id="sobre" class="container">
+
+  <div class="row py-5">
+    <div class="col-lg-3 col-12 mb-4">
+      <h3>Nós temos o <br />
+        tratamento que <br />
+        você precisa.
+        <hr class="w-50">
+      </h3>
+    </div>
+    <div class="col-lg-9 col-12 text-end">
+      <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="row care">
+    <div *ngFor="let care of ABOUT_CARE" class="col-12 col-lg-4 mb-3">
+      <div class="text-center care-card">
+        <img [src]="care.src" alt="">
+        <p class="care-title">{{care.title}}</p>
+        <p class="care-desc">{{care.desc}}</p>
+      </div>
+    </div>
+    <div class="col-12 my-4">
+      <div class="row px-5 justify-content-center">
+        <a href="" class="btn btn-cetf col-12 col-lg-3">Conte-nos seu caso</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="reviews" class="container review">
+  <div class="row">
+    <div class="col-12 my-4 text-start">
+      <h3>O que nossos<br />
+        pacientes acharam?
+        <hr class="w-50">
+      </h3>
+    </div>
+    <div class="col-12">
+      <div class="row mb-5">
+        <div *ngFor="let people of ABOUT_REVIEWS" class="col-lg-4 mb-3 text-center">
+          <div class="text-center review-card">
+            <img *ngIf="people.src" [src]="people.src" alt="">
+            <img src="http://via.placeholder.com/185x185" alt="">
+            <div class="box mt-3">
+              <h5>{{people.name}}</h5>
+              <hr />
+              <p>{{people.recuperation}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

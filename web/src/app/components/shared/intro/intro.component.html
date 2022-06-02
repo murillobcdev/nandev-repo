@@ -1,11 +1,38 @@
-<div class="container d-flex justify-content-center align-items-center flex-column py-5">
-  <h1 class="text-center mb-5">Uma grande<br />mudança</h1>
-  <p>É o que queremos trazer para os seus negócios.</p>
-  <p>Nós somos uma equipe de Desenvolvimento Web que trará Modernidade,
-    responsividade e Beleza ao seu
-    negócio.</p>
-  <p>Transformando buscas em clientes.</p>
-  <span class="my-5 pt-4">
-    <a routerLink="" class="btn btn-nandev">Continue</a>
-  </span>
-</div>
+<section class="bg">
+  <div class="container">
+    <swiper [config]="SWIPER_HERO" [pagination]="{
+      dynamicBullets: true
+    }" class="hero">
+      <ng-template swiperSlide>
+        <div class="overlay">
+          <img src="/assets/images/background/bg-swiper.jpg" alt="">
+          <div class="info">
+            <h2 class="text-end">
+              Nós cuidamos<br />
+              de você.
+            </h2>
+            <p>
+              Clínica especializada em tratamento de feridas.
+            </p>
+            <a routerLink="" href="">Entre em contato</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="overlay">
+          <img src="/assets/images/background/bg-swiper.jpg" alt="">
+          <div class="info">
+            <h2 class="text-end">
+              Nós cuidamos<br />
+              de você.
+            </h2>
+            <p>
+              Clínica especializada em tratamento de feridas.
+            </p>
+            <a routerLink="" href="">Entre em contato</a>
+          </div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</section>

@@ -10,24 +10,30 @@ export class StaffComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  staffMembers?: any = [
+  STAFF_MEMBERS?: any = [
     {
       name: 'Murillo Brito',
-      title: 'Desenvolvedor web Front-end',
-      desc: '',
-      imageSrc: 'https://placekitten.com/225/225',
+      medical_specialty: 'Vascular',
+      crm: '14184',
+      phone: '(44) 99109-0608',
     },
     {
-      name: 'Henrique Mazzuchetti',
-      title: 'Desenvolvedor web Front-end',
-      desc: '',
-      imageSrc: 'https://placekitten.com/225/225',
+      name: 'Murillo Brito',
+      medical_specialty: 'Vascular',
+      crm: '14184',
+      phone: '(44) 99109-0608',
     },
     {
-      name: 'Leon Molina',
-      title: 'Desenvolvedor Mobile e Back-end',
-      desc: '',
-      imageSrc: 'https://placekitten.com/225/225',
+      name: 'Murillo Brito',
+      medical_specialty: 'Vascular',
+      crm: '14184',
+      phone: '(44) 99109-0608',
+    },
+    {
+      name: 'Murillo Brito',
+      medical_specialty: 'Vascular',
+      crm: '14184',
+      phone: '(44) 99109-0608',
     },
   ];
 }

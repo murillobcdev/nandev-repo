@@ -1,6 +1,4 @@
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { StaffComponent } from './staff/staff.component';
-import { OurjobsComponent } from './ourjobs/ourjobs.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -18,6 +16,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { ErrorMessageComponent } from './error-message/error-message.component';
 import { SwiperModule } from 'swiper/angular';
 import { LightgalleryModule } from 'lightgallery/angular';
+import { AboutComponent } from './about/about.component';
 import { IntroComponent } from './intro/intro.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,9 +32,8 @@ const components = [
   CookiesComponent,
   ErrorMessageComponent,
   IntroComponent,
-  OurjobsComponent,
-  StaffComponent,
-  ContactUsComponent
+  AboutComponent,
+  StaffComponent
 ];
 
 @NgModule({

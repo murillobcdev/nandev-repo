@@ -14,9 +14,11 @@
 @import url("../src/assets/font-face/style.css");
 
 :root {
-  --primary-color: #e31d1a;
-  --secondary-color: #707070;
-  --tertiary-color: #eeeeee;
+  --primary-color: #004763;
+  --secondary-color: #00b4ff;
+  --tertiary-color: #ffffff;
+  --quarternary-color: #eeeeee;
+  --quinary-color: #caf55f;
 }
 
 * {
@@ -63,9 +65,7 @@
 html,
 body {
   overflow-x: hidden;
-  background: rgb(79, 32, 41);
-  background: linear-gradient(190deg, rgba(79, 32, 41, 1) 31%, rgba(0, 0, 0, 1) 100%);
-  font-style: italic;
+  background: var(--quarternary-color);
   font-size: 12px;
   @media (min-width: 992px) {
     font-size: 16px;
@@ -162,24 +162,13 @@ h1 {
   transition: all ease 0.3s;
 }
 
-.btn-nandev,
-.btn-nandev_alt {
-  font-family: "Roboto", sans-serif !important;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  background-color: transparent;
-  border: 2px solid white;
+.btn-cetf {
   color: white;
-  font-style: normal;
+  background-color: var(--primary-color);
   &:hover {
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
   }
-}
-
-.btn-nandev_alt {
-  border: 2px solid black;
-  color: black;
 }
 
 @keyframes scale {
