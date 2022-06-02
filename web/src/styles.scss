@@ -103,54 +103,6 @@ h1 {
   mix-blend-mode: multiply;
 }
 
-// .form-check {
-//   a {
-//     text-decoration: none;
-//     color: black;
-//     font-weight: bold;
-//     &:hover {
-//       text-decoration: underline;
-//     }
-//   }
-//   input {
-//     padding: 0;
-//     height: initial;
-//     width: initial;
-//     margin-bottom: 0;
-//     display: none;
-//     cursor: pointer;
-//   }
-//   label {
-//     position: relative;
-//     cursor: pointer;
-//   }
-//   label:before {
-//     content: "";
-//     -webkit-appearance: none;
-//     background-color: transparent;
-//     border: 2px solid var(--secondary-color);
-//     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-//     margin-bottom: 5px;
-//     padding: 8px;
-//     display: inline-block;
-//     position: relative;
-//     vertical-align: middle;
-//     cursor: pointer;
-//     margin-right: 5px;
-//   }
-//   input:checked + label:after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: 5px;
-//     left: 8px;
-//     width: 5px;
-//     height: 10px;
-//     border: solid var(--secondary-color);
-//     border-width: 0 2px 2px 0;
-//     transform: rotate(45deg);
-//   }
-// }
 
 .is-invalid label:before {
   border: 2px solid var(--primary-color);
